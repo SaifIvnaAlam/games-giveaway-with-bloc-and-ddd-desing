@@ -12,6 +12,5 @@ class GiveawayRepository implements IGiveaway {
     var data = jsonDecode(res.body) as List;
     var givewayList = data.map((json) => Giveaway.fromJson(json)).toList();
     return givewayList;
-    throw UnimplementedError();
   }
 }
